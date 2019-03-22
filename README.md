@@ -1,7 +1,8 @@
 # WebMCR 3 - Powerful multifunction CMS
 
 ### Install
-`composer install qexyorg/webmcr3`
+`composer require qexyorg/webmcr3`
+- Set root directory to Public/WebMCR
 - Open your web site and follow to installer
 
 ### Requires
