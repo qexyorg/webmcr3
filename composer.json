@@ -2,7 +2,7 @@
     "name": "qexyorg/webmcr3",
     "description": "WebMCR 3 - Control Manager System",
     "type": "project",
-    "license": "GNU GPL V3",
+    "license": "GPL-3.0-only",
     "keywords": ["framework","webmcr","cms","engine"],
     "version": "1.0.0-RC1",
     "homepage": "https://webmcr.ru",
