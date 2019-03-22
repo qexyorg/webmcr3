@@ -1,0 +1,41 @@
+.autocomplete-list {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	max-height: 100px;
+	background-color: #fff;
+	width: 200px;
+	color: #616161;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.autocomplete-list > li {
+	display: block;
+	box-sizing: border-box;
+	padding: 4px 8px;
+	width: 100%;
+	cursor: pointer;
+}
+
+.autocomplete-list > li:hover {
+	background-color: #2196F3;
+	color: #fff;
+}
+
+.autocomplete-list::-webkit-scrollbar{
+	width: 4px;
+	height: 4px;
+	background-color: #E0E0E0;
+	border-radius: 2px;
+	left: 5px;
+}
+
+.autocomplete-list::-webkit-scrollbar-track{
+	border-radius: 2px;
+}
+
+.autocomplete-list::-webkit-scrollbar-thumb{
+	background-color: #616161;
+	border-radius: 2px;
+}

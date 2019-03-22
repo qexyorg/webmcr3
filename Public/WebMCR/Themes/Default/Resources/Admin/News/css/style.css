@@ -1,0 +1,115 @@
+.news > .new-list {
+	display: grid;
+	grid-gap: 20px;
+	width: 100%;
+	grid-template-columns: repeat(3, calc(100% / 3 - (40px / 3))); /* 100% / 3 - ({PADDING}px * ({COLUMNS} - 1) / {COLUMNS}) */
+}
+
+.news > .new-list > .new-id > .wrapper {
+	padding: 16px 0;
+	position: relative;
+}
+
+.news > .new-list > .new-id > .wrapper > .actions {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+.news > .new-list > .new-id > .wrapper > .actions > .dropdown > .dropdown-trigger {
+	display: inline-block;
+	color: #757575;
+	box-sizing: border-box;
+	padding: 0 4px;
+	line-height: 24px;
+	height: 24px;
+	font-size: 16px;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper {
+	padding: 0;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper:hover {
+	background-color: #2196F3;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper > a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #757575;
+	height: 289px;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper:hover > a {
+	color: #fff;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper > a > .icon {
+	font-size: 64px;
+	padding-top: 96px;
+}
+
+.news > .new-list > .new-id.new-add > .wrapper > a > .text {
+	text-transform: uppercase;
+}
+
+.news > .new-list > .new-id > .wrapper > .title {
+	padding: 0 36px 0 16px;
+	font-size: 18px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #616161;
+	display: block;
+	width: 100%;
+}
+
+.news > .new-list > .new-id > .wrapper > .title > .ispublic {
+	font-size: 14px;
+	line-height: 22px;
+	display: inline-block;
+	padding-right: 4px;
+	vertical-align: top;
+}
+
+.news > .new-list > .new-id > .wrapper > .image {
+	margin-top: 16px;
+	width: 100%;
+	height: 160px;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: border-box;
+}
+
+.news > .new-list > .new-id > .wrapper > .author {
+	padding: 16px 16px 0 16px;
+	font-size: 12px;
+	color: #757575;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.news > .new-list > .new-id > .wrapper > .date {
+	padding: 16px 36px 0 16px;
+	font-size: 10px;
+	color: #9E9E9E;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.news > .new-list > .new-id > .wrapper > .updated {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	cursor: help;
+	font-size: 12px;
+	color: #616161;
+}

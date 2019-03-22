@@ -1,0 +1,192 @@
+body > .container {
+	padding: 20px;
+}
+
+.profile > .header > .stats-block {
+	position: relative;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 260px auto;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.profile > .header > .stats-block > .avatar-block > .avatar {
+	display: block;
+	box-sizing: border-box;
+	margin: auto;
+	width: 160px;
+	height: 160px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.profile > .header > .stats-block > ul {
+	font-size: 0;
+	display: block;
+}
+
+.profile > .header > .stats-block > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	width: 25%;
+	box-sizing: border-box;
+	padding: 16px;
+}
+
+.profile > .header > .stats-block > ul > li > .stat-item {
+	display: block;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.profile > .header > .stats-block > ul > li > .stat-item > .value {
+	font-size: 28px;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	padding-bottom: 4px;
+}
+
+.profile > .header > .stats-block > ul > li > .stat-item > .text {
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	font-size: 13px;
+}
+
+.profile .content-block {
+	font-size: 0;
+}
+
+.profile .content-block > .profile-content,
+.profile .content-block > .profile-menu {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	width: 260px;
+	box-sizing: border-box;
+}
+
+.profile .content-block > .profile-content {
+	width: calc(100% - 260px);
+	padding-left: 20px;
+}
+
+.profile .content-block > .profile-menu > ul {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+	background-color: #fff;
+	padding: 8px 0;
+}
+
+.profile .content-block > .profile-menu > ul > li {
+	display: block;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.profile .content-block > .profile-menu > ul > li > a {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	color: #424242;
+}
+
+.profile .content-block > .profile-menu > ul > li.active > a,
+.profile .content-block > .profile-menu > ul > li > a:hover {
+	background-color: #2196F3;
+	color: #fff;
+}
+
+.profile .content-block > .profile-menu > ul > li > a > .text,
+.profile .content-block > .profile-menu > ul > li > a > .icon {
+	display: inline-block;
+	vertical-align: top;
+	padding: 16px 20px;
+	line-height: 16px;
+}
+
+.profile .content-block > .profile-menu > ul > li > a > .text {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: calc(100% - 56px);
+}
+
+.profile .content-block > .profile-menu > ul > li > a > .icon {
+	float: right;
+	width: 56px;
+	text-align: center;
+}
+
+.profile .content-block > .profile-menu > ul > li.active > a > .icon,
+.profile .content-block > .profile-menu > ul > li > a:hover > .icon {
+	background-color: #1E88E5;
+}
+
+.profile .content-block > .profile-content > .wrapper > .content-tab {
+	display: none;
+}
+
+.profile .content-block > .profile-content > .wrapper > .content-tab.active {
+	display: block;
+}
+
+.profile .content-tab[data-id="info"] > .info-header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	align-items: start;
+	border-bottom: 1px solid #EEE;
+	padding-bottom: 20px;
+}
+
+.profile .content-tab[data-id="info"] > .info-header .profile-login {
+	display: block;
+	font-size: 28px;
+	line-height: 36px;
+	height: 36px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.profile .content-tab[data-id="info"] > .info-header .profile-names {
+	font-size: 14px;
+	padding-top: 4px;
+	color: #757575;
+}
+
+.profile .content-tab[data-id="info"] > .info-header .profile-balance {
+	font-size: 28px;
+}
+
+.profile .content-tab[data-id="info"] > .info-header .profile-subbalance {
+	font-size: 14px;
+	color: #757575;
+	padding-top: 4px;
+}
+
+.profile .messages > .message-header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	grid-gap: 20px;
+}
+
+.profile .messages > .message-header > .block-right {
+	text-align: right;
+}

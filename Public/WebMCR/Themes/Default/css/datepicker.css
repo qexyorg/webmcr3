@@ -1,0 +1,155 @@
+.datepicker-modal {
+	position: fixed;
+	padding: 20px;
+	left: 0;
+	top: 0;
+	display: none;
+	z-index: 60;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	max-height: 100%;
+	overflow: auto;
+	text-align: center;
+}
+
+.datepicker-modal > .wrapper-fix,
+.datepicker-modal > .wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.datepicker-modal > .wrapper-fix {
+	min-height: 100%;
+}
+
+.datepicker-modal > .wrapper {
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+.datepicker-modal > .wrapper > .modal-container {
+	margin: auto;
+	width: 300px;
+	height: 292px;
+	text-align: left;
+	font-size: 14px;
+	cursor: default;
+}
+
+.datepicker-modal[data-dp-datetime="true"] > .wrapper > .modal-container {
+	height: 340px;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .year-box,
+.datepicker-modal > .wrapper > .modal-container > .month-box {
+	font-weight: bold;
+	position: relative;
+	line-height: 36px;
+	color: #9E9E9E;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .year-box > .year,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .month{
+	text-align: center;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .year-box > .prev,
+.datepicker-modal > .wrapper > .modal-container > .year-box > .next,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .prev,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .next {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	box-sizing: border-box;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	border-radius: 2px;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+	color: #757575;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .year-box > .next,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .next {
+	left: auto;
+	right: 0;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .year-box > .prev:hover,
+.datepicker-modal > .wrapper > .modal-container > .year-box > .next:hover,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .prev:hover,
+.datepicker-modal > .wrapper > .modal-container > .month-box > .next:hover {
+	background-color: #eee;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .month-box > .month {
+	font-size: 14px;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .days-box > ul {
+	font-size: 0;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .days-box > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	list-style: none;
+	color: #BDBDBD;
+	cursor: pointer;
+	box-sizing: border-box;
+	line-height: 38px;
+	height: 38px;
+	width: calc(100% / 7);
+	text-align: center;
+	border-radius: 50%;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .days-box > ul > li:hover {
+	background-color: #eee;
+	color: #616161;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .days-box > ul > li.active {
+	color: #fff;
+	background-color: #03A9F4;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box {
+	font-size: 0;
+	padding-top: 8px;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.333333%;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box > div > .input,
+.datepicker-modal > .wrapper > .modal-container > .time-box > div > .text {
+	display: table-cell;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box > div > .input {
+	padding-right: 4px;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box > div > .text {
+	line-height: 36px;
+	width: 32px;
+	text-align: center;
+}
+
+.datepicker-modal > .wrapper > .modal-container > .time-box > div > .input input {
+	margin: 0;
+}

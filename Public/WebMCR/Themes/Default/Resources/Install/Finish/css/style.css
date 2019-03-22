@@ -1,0 +1,54 @@
+body > .container {
+	padding: 20px;
+	min-height: calc(100vh - 64px);
+}
+
+.install > .header {
+	padding: 40px 0;
+	color: #fff;
+}
+
+.install > .header > .title {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.install > .header > .text {
+	padding-top: 40px;
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.install > .body {
+	line-height: 24px;
+}
+
+.install > .body #after-install {
+	display: none;
+}
+
+.install > .body > .block-id {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto 320px;
+	align-items: start;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+.install > .body > .block-id > .block-left > .title {
+	font-weight: bold;
+	color: #616161;
+}
+
+.install > .body > .block-id > .block-left > .text {
+	padding-top: 8px;
+	font-size: 12px;
+	color: #9E9E9E;
+}
+
+.install > .body > .block-id > .block-right {
+	text-align: right;
+}

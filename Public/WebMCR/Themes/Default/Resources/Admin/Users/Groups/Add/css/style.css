@@ -1,0 +1,41 @@
+.groups-add > .title {
+	font-size: 24px;
+	color: #EEEEEE;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-bottom: 20px;
+}
+
+.groups-add > .add-form {
+	width: 50%;
+	margin: auto;
+}
+
+.groups-add > .add-form > .form-success {
+	display: none;
+	font-size: 120px;
+	text-align: center;
+	color: #8BC34A;
+	padding: 66px 0;
+}
+
+.groups-add > .add-form .permissions {
+	max-height: 280px;
+	overflow: auto;
+	padding: 8px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.groups-add > .add-form .permissions > .permission-id {
+	display: grid;
+	grid-gap: 12px;
+	grid-template-columns: calc(100% - 172px) 160px;
+	align-items: center;
+}
+
+.groups-add > .add-form .permissions > .permission-id {
+	padding-bottom: 8px;
+}

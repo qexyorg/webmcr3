@@ -1,0 +1,84 @@
+.news-edit > .title {
+	font-size: 24px;
+	color: #EEEEEE;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-bottom: 20px;
+}
+
+.news-edit > .edit-form > .form-wrapper {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+}
+
+.news-edit > .edit-form > .form-wrapper > div {
+	min-height: 100%;
+}
+
+.news-edit > .edit-form > .form-wrapper .image-preview {
+	height: 200px;
+	width: 100%;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url('../../../../../img/no-image-large.png');
+}
+
+.news-edit > .edit-form > .form-success {
+	display: none;
+	width: 50%;
+	margin: auto;
+	font-size: 120px;
+	text-align: center;
+	color: #8BC34A;
+	padding: 66px 0;
+}
+
+.news-edit > .form-bottom {
+	margin-top: 20px;
+}
+
+.news-edit > .form-bottom > .title {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 12px;
+	color: #757575;
+}
+
+.news-edit > .form-bottom > .tags > ul {
+	font-size: 0;
+}
+
+.news-edit > .form-bottom > .tags > ul > li {
+	display: inline-block;
+	font-size: 14px;
+	list-style: none;
+	box-sizing: border-box;
+	padding: 4px;
+}
+
+.news-edit > .form-bottom > .tags > ul > li > label {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	padding: 8px 12px;
+	border-radius: 2px;
+}
+
+.news-edit > .form-bottom > .tags > ul > li.active > label {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+.news-edit > .form-bottom > .tags > ul > li > label > input {
+	position: relative;
+	top: -1px;
+}

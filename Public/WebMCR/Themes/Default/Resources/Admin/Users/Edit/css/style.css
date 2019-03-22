@@ -1,0 +1,126 @@
+.user-edit > .title {
+	font-size: 24px;
+	color: #EEEEEE;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-bottom: 20px;
+}
+
+.user-edit > .edit-form > .form-success {
+	display: none;
+	font-size: 120px;
+	text-align: center;
+	color: #8BC34A;
+	padding: 80px 0;
+}
+
+.user-edit > .edit-form > .form-wrapper .block-top {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 144px auto;
+}
+
+.user-edit > .edit-form > .form-wrapper .block-top > .block-left {
+	position: relative;
+}
+
+.user-edit > .edit-form > .form-wrapper .block-top > .block-left > .avatar {
+	width: 144px;
+	height: 144px;
+	display: block;
+	box-sizing: border-box;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+.user-edit > .edit-form > .form-wrapper .block-top > .block-left > .avatar > .footer-help {
+	position: absolute;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+	line-height: 32px;
+	height: 32px;
+	z-index: 1;
+	width: 100%;
+	left: 0;
+	bottom: -32px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 12px;
+	padding: 0 8px;
+	text-align: center;
+}
+
+.user-edit > .edit-form > .form-wrapper .block-top > .block-left > .avatar:hover > .footer-help {
+	bottom: 0;
+}
+
+.user-edit .permissions {
+	position: relative;
+}
+
+.user-edit .permissions > .add-perm-trigger {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.user-edit .permissions > .title {
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	color: #424242;
+	padding: 0 28px;
+	line-height: 23px;
+	height: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.user-edit .permissions .permissions-selector {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: calc(100% - 212px) 144px 36px;
+	padding-bottom: 16px;
+}
+
+.user-edit .permissions .permissions-selected {
+	max-height: calc(780px - 76px);
+	overflow: auto;
+	padding: 8px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.user-edit .permissions .permissions-selected > .permission-id {
+	display: grid;
+	grid-gap: 12px;
+	grid-template-columns: calc(100% - 220px) 160px 36px;
+	align-items: center;
+}
+
+.user-edit .permissions .permissions-selected > .permission-id {
+	padding-bottom: 8px;
+}
+
+.user-edit .permissions .permissions-selected > .permission-id:last-child {
+	padding: 0;
+}
+
+.user-edit #remove-avatar {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: center;
+	width: 24px;
+	height: 24px;
+	line-height: 23px;
+}

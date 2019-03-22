@@ -1,0 +1,40 @@
+body > .container {
+	padding: 20px;
+	min-height: calc(100vh - 64px);
+}
+
+.install > .header {
+	padding: 40px 0;
+	color: #fff;
+}
+
+.install > .header > .title {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.install > .header > .text {
+	padding-top: 40px;
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.install > .body > .block-id {
+	color: #616161;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: auto 160px;
+	align-items: center;
+	padding: 20px;
+	background-color: #EEEEEE;
+	margin-bottom: 20px;
+}
+
+.install > .body > .block-id:last-child {
+	margin: 0;
+}
+
+.install > .body > .block-id > .block-right {
+	text-align: right;
+}

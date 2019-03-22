@@ -1,0 +1,58 @@
+body > .container {
+	padding: 20px;
+	min-height: calc(100vh - 632px);
+}
+
+body > .header > .container {
+	height: 340px;
+	background-image: url('../../../img/theme4.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-position: center;
+}
+
+.main > .block-middle {
+	font-size: 0;
+	color: #fff;
+}
+
+.main > .block-middle > .block-left,
+.main > .block-middle > .block-right {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.main > .block-middle > .block-left {
+	width: calc(100% - 318px);
+	padding-right: 100px;
+}
+
+.main > .block-middle > .block-left > .text h3 {
+	font-size: 48px;
+	font-weight: normal;
+}
+
+.main > .block-middle > .block-left > .text p {
+	font-size: 20px;
+	line-height: 36px;
+}
+
+.main > .block-middle > .block-right {
+	width: 318px;
+	padding-left: 20px;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50,
+.main > .block-middle > .block-right > .form .row > .col-w-100 {
+	padding: 0;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50:first-child {
+	padding-right: 8px;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50:last-child {
+	padding-left: 8px;
+}

@@ -1,0 +1,219 @@
+body > .container {
+	padding: 20px;
+	min-height: calc(100vh - 64px);
+}
+
+.main > .block-middle {
+	font-size: 0;
+	color: #fff;
+}
+
+.main > .block-middle > .block-left,
+.main > .block-middle > .block-right {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+}
+
+.main > .block-middle > .block-left {
+	width: calc(100% - 318px);
+}
+
+.main > .block-middle > .block-right {
+	width: 318px;
+	padding-left: 20px;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50 {
+	padding: 0;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50:first-child {
+	padding-right: 8px;
+}
+
+.main > .block-middle > .block-right > .form .row > .col-w-50:last-child {
+	padding-left: 8px;
+}
+
+/* ПОЛЬЗОВАТЕЛИ + */
+.user-list > .user-none {
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 64px;
+	color: #ddd;
+}
+
+.user-list > .user-id {
+	margin-bottom: 16px;
+	position: relative;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 64px auto auto 40px;
+	align-items: center;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.user-list > .user-id:last-child {
+	margin-bottom: 0;
+}
+
+.user-list > .user-id.active {
+	background-color: #01579B;
+}
+
+.user-list > .user-id > .avatar-block > .avatar {
+	margin: 0;
+	width: 64px;
+	height: 64px;
+	display: block;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.user-list > .user-id > .arrow-block > .show-short-info {
+	display: block;
+	box-sizing: border-box;
+	line-height: 64px;
+	height: 64px;
+	width: 100%;
+	text-align: center;
+	color: #BDBDBD;
+	font-size: 18px;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+	padding-left: 8px;
+}
+
+.user-list > .user-id.active > .arrow-block > .show-short-info {
+	color: #fff;
+}
+
+.user-list > .user-id > .arrow-block > .show-short-info:hover {
+	padding-left: 24px;
+}
+
+.user-list > .user-id > .info-block > .login {
+	font-size: 16px;
+	margin-bottom: 12px;
+	color: #212121;
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.user-list > .user-id.active > .info-block > .login {
+	color: #fff;
+}
+
+.user-list > .user-id > .info-block > .group {
+	font-size: 12px;
+	color: #757575;
+}
+
+.user-list > .user-id.active > .info-block > .group {
+	color: #fff;
+}
+
+.user-list > .user-id > .stats-block > ul {
+	display: grid;
+	grid-gap: 12px;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+}
+
+.user-list > .user-id > .stats-block > ul > li {
+	list-style: none;
+	text-align: center;
+	color: #757575;
+}
+
+.user-list > .user-id.active > .stats-block > ul > li {
+	color: #fff;
+}
+
+.user-list > .user-id > .stats-block > ul > li > .value {
+	font-size: 20px;
+}
+
+.user-list > .user-id > .stats-block > ul > li > .value > .fa {
+	margin-right: 4px;
+}
+
+.user-list > .user-id > .stats-block > ul > li > .text {
+	font-size: 12px;
+	padding-top: 8px;
+}
+
+#user-sub-info {
+	display: none;
+	overflow: hidden;
+	height: 306px;
+}
+
+#user-sub-info > .wrapper {
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: 0;
+	text-align: left;
+}
+
+#user-sub-info > .wrapper > .avatar-block > .avatar {
+	margin: auto;
+	width: 64px;
+	height: 64px;
+	display: block;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#user-sub-info > .wrapper > .info-block > .login {
+	font-size: 16px;
+	padding: 12px 0;
+	color: #212121;
+	display: block;
+	vertical-align: top;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#user-sub-info > .wrapper > .info-block > .name {
+	font-size: 12px;
+	color: #757575;
+	text-align: center;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #eee;
+}
+
+#user-sub-info > .wrapper > .info-block > .group,
+#user-sub-info > .wrapper > .info-block > .gender,
+#user-sub-info > .wrapper > .info-block > .birthday {
+	font-size: 12px;
+	color: #757575;
+	padding-top: 12px;
+}
+
+#user-sub-info > .wrapper > .info-block > .about {
+	padding-top: 20px;
+	font-size: 12px;
+	color: #757575;
+}
+
+#user-sub-info #user-sub-close {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	color: #212121;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+}
+/* ПОЛЬЗОВАТЕЛИ - */

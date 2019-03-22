@@ -1,0 +1,71 @@
+.message-view > .message-subject {
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+	align-items: start;
+}
+
+.message-view > .message-subject > .block-left,
+.message-view > .message-subject > .block-right {
+	position: relative;
+}
+
+.message-view > .message-subject > .block-right {
+	padding-left: 16px;
+}
+
+.message-view > .message-subject > .block-left {
+	padding-right: 16px;
+	height: 100%;
+	border-right: 1px solid #E0E0E0;
+}
+
+.message-view > .message-subject > .block-left > .subject {
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.message-view > .message-subject > .block-left > .text {
+	line-height: 24px;
+}
+
+.message-view > .message-subject > .block-right > .read {
+	position: absolute;
+	right: 0;
+	width: 24px;
+	line-height: 24px;
+	height: 24px;
+	text-align: center;
+	font-size: 12px;
+	color: #757575;
+}
+
+.message-view > .message-subject > .block-right > .author {
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 0 24px;
+}
+
+.message-view > .message-subject > .block-right > .avatar-block {
+	padding-top: 16px;
+}
+
+.message-view > .message-subject > .block-right > .avatar-block > .avatar {
+	width: 96px;
+	height: 96px;
+	display: block;
+	border-radius: 50%;
+	margin: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.message-view > .message-subject > .block-right > .date {
+	font-size: 12px;
+	color: #616161;
+	text-align: center;
+	padding-top: 32px;
+}

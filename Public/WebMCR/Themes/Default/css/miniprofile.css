@@ -1,0 +1,103 @@
+.g-recaptcha,
+.g-recaptcha-target {
+	margin-bottom: 16px;
+	transform:scale(0.99);-webkit-transform:scale(0.99);transform-origin:0 0;-webkit-transform-origin:0 0;
+}
+
+.mini-profile > .header-block {
+	background-color: #eee;
+	padding: 20px;
+	border-radius: 2px 2px 0 0;
+	position: relative;
+}
+
+.mini-profile > .header-block > .avatar {
+	width: 80px;
+	height: 80px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+	margin: auto;
+}
+
+.mini-profile > .header-block > .menu {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -16px;
+	right: 0;
+	z-index: 1;
+	padding: 0 16px;
+}
+
+.mini-profile > .header-block > .menu > ul {
+	font-size: 0;
+}
+
+.mini-profile > .header-block > .menu > ul > li {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding-right: 8px;
+}
+
+.mini-profile > .header-block > .menu > ul > li:last-child {
+	padding: 0;
+}
+
+.mini-profile > .header-block > .menu > ul > li > a {
+	display: block;
+	box-sizing: border-box;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	color: #9E9E9E;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
+	border-radius: 50%;
+	transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.mini-profile > .header-block > .menu > ul > li > a:hover {
+	color: #fff;
+	background-color: #03A9F4;
+}
+
+.mini-profile > .content-block {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 0 0 2px 2px;
+}
+
+.mini-profile > .content-block > ul > li {
+	display: block;
+	list-style: none;
+	width: 100%;
+	box-sizing: border-box;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.mini-profile > .content-block > ul > li > .icon,
+.mini-profile > .content-block > ul > li > .text {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 40px;
+	height: 40px;
+}
+
+.mini-profile > .content-block > ul > li > .icon {
+	font-size: 24px;
+	color: #BDBDBD;
+	min-width: 40px;
+	text-align: center;
+}
+
+.mini-profile > .content-block > ul > li > .text {
+	color: #212121;
+	font-size: 16px;
+}

@@ -1,0 +1,97 @@
+.users > .user-list {
+	display: grid;
+	grid-gap: 20px;
+	width: 100%;
+	grid-template-columns: repeat(4, calc(100% / 4 - (60px / 4))); /* 100% / 3 - ({PADDING}px * ({COLUMNS} - 1) / {COLUMNS}) */
+}
+
+.users > .user-list > .user-id > .wrapper {
+	padding: 0;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-header {
+	height: 120px;
+	background-color: #607D8B;
+	width: 100%;
+	border-radius: 2px 2px 0 0;
+	position: relative;
+	padding: 28px 16px 0 16px;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-header > .login {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-header > .actions {
+	position: absolute;
+	right: 12px;
+	top: 8px;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-header > .actions > .dropdown > .dropdown-trigger {
+	display: inline-block;
+	color: #fff;
+	box-sizing: border-box;
+	padding: 0 4px;
+	line-height: 16px;
+	height: 16px;
+	font-size: 16px;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-header > .avatar {
+	box-sizing: border-box;
+	position: absolute;
+	padding: 0;
+	left: calc(50% - 48px);
+	top: calc(100% - 48px);
+	width: 96px;
+	height: 96px;
+	display: block;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-body {
+	background-color: #fff;
+	border-radius: 0 0 2px 2px;
+	padding: 64px 16px 16px 16px;
+	color: #616161;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-body > .user-info > li {
+	display: block;
+	list-style: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 12px;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-body > .user-info > li > .name {
+	font-size: 12px;
+	font-weight: bold;
+	color: #9E9E9E;
+	text-transform: uppercase;
+	padding-bottom: 4px;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-body > .user-info > li > .name,
+.users > .user-list > .user-id > .wrapper > .user-body > .user-info > li > .value {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+}
+
+.users > .user-list > .user-id > .wrapper > .user-body > .user-info > li:last-child {
+	padding: 0;
+}

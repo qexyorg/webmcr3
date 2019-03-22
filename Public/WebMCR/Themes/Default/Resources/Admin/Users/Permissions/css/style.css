@@ -1,0 +1,149 @@
+.permissions > .permission-list {
+	display: grid;
+	grid-gap: 20px;
+	width: 100%;
+	grid-template-columns: repeat(3, calc(100% / 3 - 16px));
+}
+
+.permissions > .permission-list > .permission-add > .wrapper {
+	min-height: 112px;
+	height: 100%;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.permissions > .permission-list > .permission-add > .wrapper > .info {
+	position: absolute;
+	top: calc(50% - 18px);
+	left: 20px;
+	width: calc(100% - 40px);
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 36px auto;
+	align-items: center;
+	color: #757575;
+}
+
+.permissions > .permission-list > .permission-add > .wrapper > .info > .icon {
+	line-height: 36px;
+	height: 36px;
+	width: 36px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.permissions > .permission-list > .permission-add > .wrapper > .info > .text {
+	line-height: 36px;
+	height: 36px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper {
+	position: relative;
+	height: 100%;
+	min-height: 112px;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .actions {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .actions > .dropdown > .dropdown-trigger {
+	display: inline-block;
+	color: #757575;
+	box-sizing: border-box;
+	padding: 0 8px;
+	line-height: 24px;
+	height: 24px;
+	font-size: 16px;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .id {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 10px;
+	line-height: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	padding: 0 8px;
+	color: #BDBDBD;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .view {
+	display: block;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .view > .title,
+.permissions > .permission-list > .permission-id > .wrapper > .view > .name,
+.permissions > .permission-list > .permission-id > .wrapper > .view > .default,
+.permissions > .permission-list > .permission-id > .wrapper > .view > .type {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .view > .name,
+.permissions > .permission-list > .permission-id > .wrapper > .view > .default,
+.permissions > .permission-list > .permission-id > .wrapper > .view > .type {
+	padding-top: 8px;
+	font-size: 12px;
+	color: #757575;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .view > .system {
+	position: absolute;
+	right: 24px;
+	bottom: 0;
+	font-size: 13px;
+	line-height: 24px;
+	height: 24px;
+	padding: 0 8px;
+	cursor: help;
+	color: #F44336;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .view .show-info,
+.permissions > .permission-list > .permission-id > .wrapper > .info .hide-info {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 16px;
+	line-height: 24px;
+	height: 24px;
+	padding: 0 8px;
+	box-sizing: border-box;
+	display: block;
+	color: #9E9E9E;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .info {
+	display: none;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .info > .info-block {
+	color: #616161;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .info > .info-block > .name {
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.permissions > .permission-list > .permission-id > .wrapper > .info > .info-block > .subtext {
+	font-size: 10px;
+	color: #757575;
+	padding-top: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

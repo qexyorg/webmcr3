@@ -1,0 +1,40 @@
+.settings .section {
+	padding-bottom: 20px;
+}
+
+.settings .section:last-child {
+	padding: 0;
+}
+
+.settings .section > .section-name {
+	font-size: 20px;
+	padding: 16px;
+	padding-bottom: 0;
+	color: #424242;
+	display: block;
+	box-sizing: border-box;
+}
+
+.settings .section > .section-row {
+	display: grid;
+	grid-column-gap: 16px;
+	grid-template-columns: 3fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	padding: 16px;
+}
+
+.settings .section > .section-row > .setting-name {
+	font-size: 16px;
+	color: #616161;
+}
+
+.settings .section > .section-row > .setting-name > .subname {
+	display: block;
+	width: 100%;
+	color: #9E9E9E;
+	font-size: 14px;
+	box-sizing: border-box;
+	padding-top: 8px;
+	line-height: 20px;
+}

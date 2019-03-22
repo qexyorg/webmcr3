@@ -1,0 +1,21 @@
+.side-block {
+	display: block;
+	box-sizing: border-box;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.side-block:last-child {
+	padding: 0;
+}
+
+.side-block > .wrapper {
+	position: relative;
+}
+
+.side-block > .wrapper > .block-name {
+	padding-bottom: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
