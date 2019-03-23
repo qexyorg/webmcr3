@@ -1,6 +1,5 @@
 $(function(){
 	$('body').on('click', '.toggle-class', function(e){
-		e.preventDefault();
 
 		var that = $(this);
 

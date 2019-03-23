@@ -2,6 +2,7 @@
 
 namespace App\WebMCR\Models\Admin;
 
+use App\WebMCR\Models\Logger;
 use Framework\Alonity\Router\RouterHelper;
 use App\WebMCR\Models\Admin\Users\Groups;
 use Framework\Components\Cache\Cache;
@@ -215,8 +216,8 @@ class Settings {
 			->add('mail_from', _Input::TYPE_STRING, 1, 128)
 			->add('mail_from_name', _Input::TYPE_STRING, 1, 64)
 			->add('restore_expire', _Input::TYPE_INTEGER, 1, 10, false, 0)
-			->add('register_enable', _Input::TYPE_INTEGER, 1, 1, false, 1)
-			->add('register_captcha', _Input::TYPE_INTEGER, 1, 1, false, 1)
+			->add('register_enable', _Input::TYPE_INTEGER, 1, 1, false, 0)
+			->add('register_captcha', _Input::TYPE_INTEGER, 1, 1, false, 0)
 			->add('captcha_recaptcha_public', _Input::TYPE_STRING, 1, 128)
 			->add('captcha_recaptcha_private', _Input::TYPE_STRING, 1, 128)
 			->add('mail_blacklist', _Input::TYPE_STRING, 1, 65565)
