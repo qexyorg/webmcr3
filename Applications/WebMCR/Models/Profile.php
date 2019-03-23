@@ -334,6 +334,9 @@ class Profile extends Model {
 		$minSize = explode('x', Permissions::get('profile_avatar_min_size'));
 		$maxSize = explode('x', Permissions::get('profile_avatar_max_size'));
 
+		$minSize = array_map('intval', $minSize);
+		$maxSize = array_map('intval', $maxSize);
+
 		$size = @getimagesize($files['avatar']['tmp_name']);
 
 		if(!$size){
@@ -344,7 +347,7 @@ class Profile extends Model {
 			];
 		}
 
-		if($minSize[0]<$size[0] || $minSize[1]<$size[1] || $maxSize[0]>$size[0] || $maxSize[1]>$size[1]){
+		if($size[0]<$minSize[0] || $size[1]<$minSize[1] || $size[0]>$maxSize[0] || $size[1]>$maxSize[1]){
 			return [
 				'type' => false,
 				'title' => 'Ошибка!',
