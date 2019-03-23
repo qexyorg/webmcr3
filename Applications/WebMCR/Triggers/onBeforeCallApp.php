@@ -42,11 +42,13 @@ class onBeforeCallApp implements TriggersInterface {
 			$config['database']['driver'] => $config['database'],
 		]);
 
-		$banned = $this->getBannedIPs();
+		if(!$config['install']){
+			$banned = $this->getBannedIPs();
 
-		if(isset($banned[UserHelper::getIP()])){
-			$banned = $banned[UserHelper::getIP()];
-			exit("<center><h3>Вы были забанены</h3><br><br>Причина: {$banned['reason']}</center>");
+			if(isset($banned[UserHelper::getIP()])){
+				$banned = $banned[UserHelper::getIP()];
+				exit("<center><h3>Вы были забанены</h3><br><br>Причина: {$banned['reason']}</center>");
+			}
 		}
 	}
 }

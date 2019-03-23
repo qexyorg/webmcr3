@@ -1,7 +1,7 @@
 <?php // WebMCR 3 Main Config | Updated: 19.03.2019 16:59:18
 
 return array (
-  'install' => 0,
+  'install' => 1,
   'version' => '1.0.0',
   'userLogic' => 'App\\WebMCR\\Models\\User\\Logic\\DefaultLogic',
   'csrfString' => 'йгтщТhя1хZъОfy0БщD$YА`ЮТFюзэпЖВИ',
