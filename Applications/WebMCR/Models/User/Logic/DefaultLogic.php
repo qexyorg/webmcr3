@@ -3,12 +3,12 @@
  * Default user logic component of WebMCR 3
  *
  * @author Qexy <admin@qexy.org>
- * @copyright Copyright (c) 2018, Qexy
+ * @copyright Copyright (c) 2019, Qexy
  * @link http://qexy.org
  *
  * @license https://www.gnu.org/licenses/gpl-3.0.html
  *
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 namespace App\WebMCR\Models\User\Logic;
@@ -267,23 +267,26 @@ class DefaultLogic implements LogicInterface {
 		}
 
 		$email = $params['email'];
-		$expl = explode('@', $email);
-		$login = preg_replace('/[^\w]+/i', '_', $expl[0]);
 
-		$success = false;
+		if(!isset($params['login'])){
+			$expl = explode('@', $email);
 
-		for($i=0; $i<$this->maxGenerateLogin; $i++){
-			$try = ($i==0) ? $login : $login.Crypt::randomInt(1, 99999);
+			$login = preg_replace('/[^\w]+/i', '_', $expl[0]);
+			$success = false;
 
-			if(!$this->userExists($try, 'login')){
-				$login = $try;
-				$success = true;
-				break;
+			for($i=0; $i<$this->maxGenerateLogin; $i++){
+				$try = ($i==0) ? $login : $login.Crypt::randomInt(1, 99999);
+
+				if(!$this->userExists($try, 'login')){
+					$login = $try;
+					$success = true;
+					break;
+				}
 			}
-		}
 
-		if(!$success){
-			return false;
+			if(!$success){ return false; }
+		}else{
+			$login = $params['login'];
 		}
 
 		$password = (isset($params['password'])) ? $params['password'] : Crypt::random(12, 16);

@@ -72,7 +72,7 @@
 
 
 			<div class="text-center">
-				<a href="#" class="toggle-class d-inline-block py-20" data-element="#donate" data-classname="d-none">Пожертвования</a>
+				<a href="#" class="toggle-class d-inline-block py-20 preventDefault" data-element="#donate" data-classname="d-none">Пожертвования</a>
 			</div>
 
 			<div class="bg-light-green p-16 d-none" id="donate">
