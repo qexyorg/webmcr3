@@ -2,6 +2,7 @@
 
 namespace App\WebMCR\Models\Admin\Users;
 
+use App\WebMCR\Models\Logger;
 use Framework\Alonity\DI\DI;
 use Framework\Alonity\Router\RouterHelper;
 use App\WebMCR\Models\User\User;

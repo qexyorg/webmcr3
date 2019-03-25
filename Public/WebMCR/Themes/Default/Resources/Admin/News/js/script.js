@@ -10,7 +10,7 @@ $(function(){
 			qx.load_elements(that.attr('data-href'), {}, function(data){
 				if(!data.type){ that.prop('disabled', false); return qx.notify(data.text, data.title); }
 
-				that.closest('.tag-id').fadeOut('fast', function(){
+				that.closest('.new-id').fadeOut('fast', function(){
 					$(this).remove();
 				});
 
