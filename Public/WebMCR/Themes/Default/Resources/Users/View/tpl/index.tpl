@@ -88,7 +88,7 @@
 								<div class="text-right">
 									{% if user.id != __USER__.id and __PERMISSION__.users_subscribe %}
 										{% set WIDGET_SUBSCRIBES = subscribes('users', user.id) %}
-										{{include('Resources/Subscribes/tpl/subscribes.tpl')}}
+										{{include('Resources/Subscribes/tpl/Subscribes.tpl')}}
 									{% endif %}
 
                                     {% if user.id != __USER__.id and __PERMISSION__.profile_messages_send %}
