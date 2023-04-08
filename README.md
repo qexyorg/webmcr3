@@ -7,7 +7,7 @@
 - Open your web site and follow to installer
 
 ### Requires
-- PHP >= 7.0
+- PHP >= 7.2
 - Alonity | qexyorg/alonity
 - PHPMailer | phpmailer/phpmailer
 - Twig | twig/twig
