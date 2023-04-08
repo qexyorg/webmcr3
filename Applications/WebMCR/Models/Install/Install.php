@@ -17,7 +17,7 @@ use Twig\TwigFunction;
 
 class Install {
 
-	const VERSION_COMPARE = '7.0.0';
+	const VERSION_COMPARE = '7.2.0';
 
 	public function needAccess(){
 		return [
