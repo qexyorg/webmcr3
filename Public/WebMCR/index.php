@@ -30,12 +30,52 @@ if(!file_exists(__ROOT__.'/tmp/cache')){
 
 if(!isset($_SESSION)){ session_start(); }
 
-require_once(__ROOT__.'/vendor/autoload.php');
+$autoloadPath = __ROOT__.'/vendor/autoload.php';
+
+if(!is_file($autoloadPath)){
+
+    if(!is_dir(__ROOT__.'/tmp/composer')){
+        @mkdir(__ROOT__.'/tmp/composer', 0777, true);
+    }
+
+    if(!is_file(__ROOT__.'/tmp/composer.phar')){
+        $composer = @file_get_contents('https://getcomposer.org/composer.phar');
+
+        if($composer === false){
+            exit('Check internet connection');
+        }
+
+        file_put_contents(__ROOT__.'/tmp/composer.phar', $composer);
+
+        $phar = new Phar(__ROOT__.'/tmp/composer.phar');
+
+        $phar->extractTo(__ROOT__.'/tmp/composer');
+    }
+
+    require_once(__ROOT__.'/tmp/composer/vendor/autoload.php');
+
+    chdir('../../');
+
+    $input = new Symfony\Component\Console\Input\ArrayInput(array('command' => 'install'));
+
+    $application = new Composer\Console\Application();
+
+    $application->setAutoExit(false);
+    $application->run($input);
+
+    if(!is_file($autoloadPath)){
+        exit('Something was wrong!');
+    }
+
+    header('Refresh:0');
+
+    exit();
+}
+
+require_once($autoloadPath);
 
 $app = new Framework\Alonity\Alonity();
 
 $app->run();
 
 //echo microtime(true)-$start;
-
-?>
