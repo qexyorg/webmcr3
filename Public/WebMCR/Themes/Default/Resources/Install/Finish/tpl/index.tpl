@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<iframe src="https://webmcr.ru/api/cms/install/?d={{ __META__.full_site_url }}" style="width:468px;height:60px;margin:auto;margin-top:20px;display:block;" scrolling="no" sandbox="allow-scripts" frameborder="0"></iframe>
+			<iframe src="https://metrics.qexy.org/?d={{ __META__.full_site_url }}" style="width:468px;height:60px;margin:auto;margin-top:20px;display:block;" scrolling="no" sandbox="allow-scripts" frameborder="0"></iframe>
 
 
 			<div class="text-center">
