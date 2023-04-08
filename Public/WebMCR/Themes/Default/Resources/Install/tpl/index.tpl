@@ -45,7 +45,7 @@
 
 		<div class="body window">
 			<div class="block-id">
-				<div class="block-left">PHP версия <b>>=7.0.0</b></div>
+				<div class="block-left">PHP версия <b>>=7.2.0</b></div>
 
                 {% set complete = true %}
 
